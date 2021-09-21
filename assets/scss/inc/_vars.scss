@@ -1,0 +1,77 @@
+// Project variables
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+
+$white: #fff;
+$black: #000;
+$green: #3dbe98;
+$red: #ee2255;
+$blue: #21b6c7;
+$orange: #ff5d35;
+
+$text-color: #333;
+
+$main-color: $white;
+$sub-color-black: $black;
+$sub-color-green: $green;
+$sub-color-red: $red;
+$sub-color-blue: $blue;
+$sub-color-orange: $orange;
+
+$font: 'Montserrat', sans-serif;
+$font-light: 'Montserrat', sans-serif;
+$font-bold: 'Montserrat', sans-serif;
+$sub-font-italic: 'Montserrat', sans-serif;
+$sub-font: 'Montserrat', sans-serif;
+
+/*$font: 'GothamMedium', sans-serif;
+$font-light: 'GothamLight', sans-serif;
+$font-bold: 'GothamBold', sans-serif;
+$sub-font: 'GothamBook', sans-serif;
+$sub-font-italic: 'GothamBookItalic', sans-serif;*/
+
+$fa: 'Font Awesome 5 Free';
+$fab: 'Font Awesome 5 Brands';
+
+// Font Awesome Vars
+$fa-font-path: "../fonts";
+$fa-font-display: swap;
+
+// Project mixins
+
+
+// Custom fonts
+/*@font-face {
+  font-family: 'GothamLight';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../../fonts/gotham/GothamLight.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'GothamMedium';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../../fonts/gotham/GothamMedium.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'GothamBold';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../../fonts/gotham/GothamBold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'GothamBook';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../../fonts/gotham/GothamBook.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'GothamBookItalic';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../../fonts/gotham/GothamBookItalic.ttf') format('ttf');
+}*/

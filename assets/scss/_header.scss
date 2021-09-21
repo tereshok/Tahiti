@@ -1,0 +1,228 @@
+.header {
+	.grid-x {
+		align-items: center;
+		@media screen and (max-width: 1280px) {
+			padding: 0 15px;
+		}
+
+		@media screen and (max-width: 640px) {
+			padding: 0;
+		}
+	}
+}
+
+.logo {
+	padding: 28px 0;
+
+	@media screen and (max-width: 1024px) {
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 0;
+		@media screen and (max-width: 1024px) {
+			max-width: 179px;
+		}
+		@media screen and (max-width: 640px) {
+			margin: auto;
+		}
+	}
+
+	a {
+		display: inline-block;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		object-fit: contain;
+	}
+}
+
+@include breakpoint(small down) {
+	/* TOP BAR Mobile STYLING */
+
+	.menu-grid-container {
+		padding-left: 0;
+		padding-right: 0;
+
+		.grid-margin-x {
+			margin-left: 0;
+			margin-right: 0;
+
+			.cell {
+				margin-left: 0;
+				margin-right: 0;
+				width: 100%;
+			}
+		}
+	}
+
+	.title-bar {
+		line-height: 45px;
+
+		.menu-icon {
+			padding: 0;
+			border: none;
+			background-color: transparent;
+
+			@include menu-icon(#fff, #fff, 30px, 24px, 3px);
+		}
+
+	}
+
+	.top-bar {
+		display: none;
+		background: $main-color; /* menu list background color */
+	}
+
+	.header-menu {
+		background: transparent;
+
+		li {
+			> a {
+				background: $main-color; /* menu item background color */
+				color: $sub-color-red; /* menu item text color */
+				line-height: 45px;
+
+				&:focus {
+					&, & + .submenu-toggle {
+						background: darken($main-color, 5); /* menu item background color on hover */
+					}
+				}
+			}
+
+			&.current-menu-item, &.current_page_ancestor, &.current_page_parent {
+				> a, .submenu-toggle {
+					background: lighten($main-color, 5); /* current/parent menu item background color */
+				}
+			}
+
+			&[aria-expanded='true'] {
+				> a, .submenu-toggle {
+					background: darken($main-color, 3); /* menu item background color on open dropdown */
+				}
+			}
+		}
+
+		.submenu-toggle {
+			padding: 0;
+		}
+
+		.submenu {
+			a {
+				padding-left: #{get-side($accordionmenu-padding, 'left') * 1.65};
+			}
+
+			.submenu {
+				a {
+					padding-left: #{get-side($accordionmenu-padding, 'left') * 2.3};
+				}
+			}
+		}
+	}
+}
+
+@include breakpoint(medium) {
+	/* TOP BAR STYLING */
+
+	.header-menu.menu {
+		justify-content: flex-end;
+
+		/* Align menu items to the center */
+		// justify-content: center;
+		li:first-child {
+			border: none;
+		}
+
+		li:last-child {
+			a {
+				padding-right: 0;
+			}
+		}
+
+		li {
+			border-left: 1px solid #ebeda4;
+
+			> a {
+				/* Regular menu item style */
+				line-height: 36px;
+				font-family: $sub-font;
+				color: $sub-color-red;
+				font-size: 18px;
+				font-weight: 400;
+				text-transform: uppercase;
+				padding: 0px 30px;
+
+				@media screen and (max-width: 968px) {
+					font-size: 15px;
+					padding: 0px 10px;
+				}
+
+				&:hover {
+					/* menu item style on hover */
+					background: $main-color;
+					color: invert($main-color);
+				}
+			}
+
+			&.current-menu-item, &.current_page_ancestor, &.current_page_parent {
+				> a {
+					/* Style of Current page and Ancestor page */
+					background: $main-color;
+					color: invert($main-color);
+				}
+			}
+
+			&.has-dropdown {
+				> a {
+					/* Style of item with dropdown */
+				}
+			}
+
+			&.is-active > a {
+				/* Parent link style on dropdown hover */
+				background: invert($main-color);
+				color: $main-color;
+			}
+		}
+
+		/* Dropdown item styling */
+
+		.submenu {
+			z-index: 11;
+			display: none;
+
+			&.js-dropdown-active {
+				display: block;
+			}
+
+			li {
+				> a {
+					/* Regular link in dropdown */
+					background: invert($main-color);
+					color: $main-color;
+					line-height: 30px;
+
+					&:hover {
+						/* Dropdown link on hover */
+						background: lighten($main-color, 10);
+						color: #fff;
+					}
+				}
+
+				&.current-menu-item, &.current_page_ancestor, &.current_page_parent {
+					> a {
+						background: lighten($main-color, 10);
+						color: #fff;
+					}
+				}
+			}
+
+			.submenu {
+				/* Styles for 2nd level dropdown menu */
+			}
+		}
+	}
+}
+

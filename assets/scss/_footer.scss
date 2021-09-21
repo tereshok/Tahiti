@@ -1,0 +1,173 @@
+.footer {
+	padding: 41px 0;
+
+	@media screen and (max-width: 640px) {
+		padding: 10px 0;
+	}
+
+	.grid-x {
+		@media screen and (max-width: 1200px) {
+			.widget_zone_left, .widget_zone_center, .widget_zone_right {
+				margin: 0 auto;
+			}
+		}
+
+		@media screen and (max-width: 640px) {
+			.cell {
+				padding: 0 0 15px 0;
+			}
+		}
+	}
+}
+
+.footer__logo {
+	@media screen and (max-width: 1024px) {
+		padding: 0 0 41px 0;
+		text-align: center;
+	}
+
+	@media screen and (max-width: 640px) {
+		padding: 30px 0;
+		margin: 0;
+	}
+
+	img {
+		max-height: 44px;
+		width: auto;
+	}
+}
+
+.footer__sp {
+	text-align: right;
+	padding: 8px 0 0 0;
+	margin: 0 0 0 58px !important;
+
+	@media screen and (max-width: 1200px) {
+		margin: 0 auto !important;
+	}
+
+	@media screen and (max-width: 1024px) {
+		text-align: left;
+		padding: 0;
+	}
+
+	@media screen and (max-width: 640px) {
+		text-align: center;
+		padding: 0 0 35px 0 !important;
+		.stay-tuned {
+			margin: 0;
+			padding: 0 0 0 10px;
+		}
+	}
+}
+
+.footer-menu {
+	@include list-unstyled;
+	text-align: center;
+
+	li {
+		display: inline-block;
+
+		a {
+			display: block;
+			padding: 5px 10px;
+		}
+	}
+}
+
+.footer__copy {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: lightgrey;
+	font-size: 12px;
+	text-align: center;
+}
+
+.footer__widget {
+	.widget__title {
+		font-size: 18px;
+		letter-spacing: 0.2px;
+		color: $sub-color-red;
+		padding: 3px 0 17px 0;
+		text-transform: uppercase;
+	}
+
+	ul {
+		flex-direction: column;
+
+		@media screen and (max-width: 640px) {
+			display: block;
+			columns: 2;
+		}
+	}
+
+	a {
+		color: $sub-color-red;
+		padding: 0 0 3.1px 0;
+
+		&:hover {
+			color: $sub-color-black;
+		}
+	}
+
+	aside {
+		@media screen and (max-width: 640px) {
+			padding: 0 0 0 16%;
+		}
+
+		@media screen and (max-width: 480px) {
+			padding: 0 0 0 11%;
+		}
+	}
+
+	&.widget_zone_left {
+		margin: 0 0 0 -24px;
+
+		@media screen and (max-width: 1024px) {
+			padding: 0 0 0 10%;
+		}
+	}
+
+	&.widget_zone_center {
+		margin: 0 0 0 -4px;
+
+		@media screen and (max-width: 1024px) {
+			padding: 0 0 0 7%;
+		}
+	}
+
+	&.widget_zone_right {
+		margin: 0 0 0 75px;
+
+		@media screen and (max-width: 1024px) {
+			padding: 0 0 0 7%;
+		}
+	}
+}
+
+.stay-tuned {
+	@media screen and (max-width: 1200px) {
+		max-width: 200px;
+
+		&__item {
+			padding-bottom: 10px;
+		}
+	}
+
+	@media screen and (max-width: 1024px) {
+		max-width: 100%;
+
+		&__item {
+			padding-bottom: 0;
+		}
+	}
+}
+
+
+.stay-tuned__link  {
+	color: $sub-color-black;
+
+	.fab {
+		font-size: 20px;
+	}
+}

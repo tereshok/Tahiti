@@ -1,0 +1,422 @@
+/* ------------------------------------
+              Home slider
+------------------------------------- */
+
+.home-slide__caption {
+  text-align: center;
+  color: $main-color;
+  padding: 0 0 14px 14px;
+
+  h2 {
+    strong {
+      font-family: $font-bold;
+      letter-spacing: -1px;
+    }
+    font-family: $font-light;
+    font-size: 64px;
+    font-weight: 300;
+    letter-spacing: 1.9px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 640px) {
+      font-size: 32px;
+    }
+  }
+
+  p {
+    font-size: 32px;
+    padding: 6px 14px 0 0;
+
+    @media screen and (max-width: 640px) {
+      font-size: 18px;
+    }
+  }
+}
+
+
+/* ------------------------------------
+           Discover section
+------------------------------------- */
+
+.discover-tahiti__section {
+  background-color: #fbfbed;
+
+  .discover__title {
+    h3 {
+      strong {
+        font-family: $font-bold;
+        letter-spacing: -0.5px;
+      }
+      font-family: $font;
+      color: $sub-color-green;
+      padding: 64px 0 0 0;
+      letter-spacing: 1.4px;
+      margin: 0;
+
+      @media screen and (max-width: 640px) {
+        font-size: 30px;
+        text-align: center;
+        padding: 30px 0 0 0;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      padding: 0 0 46px 0;
+      letter-spacing: 0.05px;
+    }
+  }
+
+  .discover-card {
+    @media screen and (min-width: 1200px) {
+      justify-content: center;
+
+      .discover__post {
+        margin: 0 10px;
+        width: 285px;
+        display: grid;
+        align-content: space-between;
+      }
+
+      div:first-child {
+        margin-left: 0;
+      }
+
+      div:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .discover__post {
+    background-color: $main-color;
+    height: max-content;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 640px) {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    img {
+      height: 170px;
+
+      @media screen and (max-width: 1024px) {
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    .discover-arrow {
+      max-height: 20px;
+      max-width: 20px;
+    }
+
+    &_content {
+      padding: 9px 18px;
+
+      @media screen and (max-width: 1024px) {
+        text-align: left;
+      }
+
+      h5 {
+        font-family: $sub-font;
+        font-size: 24px;
+        font-weight: 400;
+        color: $sub-color-green;
+        text-transform: uppercase;
+        padding: 0 0 8px 0;
+      }
+
+      p {
+        font-size: 14px;
+        padding: 0 0 10px 0;
+        line-height: 17px;
+      }
+    }
+
+    a {
+      font-family: $sub-font;
+      font-size: 20px;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      letter-spacing: 1px;
+
+      p {
+        letter-spacing: 0.6px;
+      }
+
+      span {
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .discover-select {
+    justify-content: center;
+
+    &__content {
+      display: flex;
+      flex-direction: row;
+      max-width: 895px;
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+
+      @media screen and (max-width: 640px) {
+        flex-direction: column;
+      }
+
+      .ui-selectmenu-button {
+        min-width: 0;
+      }
+
+      span {
+        font-family: $sub-font;
+        height: 60px;
+        font-size: 20px;
+      }
+
+      a {
+        font-family: $sub-font;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 15px 65px;
+
+        @media screen and (max-width: 640px) {
+          text-align: center;
+        }
+      }
+    }
+
+    &__block {
+      padding: 55px 0 80px 0;
+      max-width: 895px;
+      justify-content: center;
+    }
+
+    &__title {
+      font-size: 20px;
+      text-align: center;
+      padding: 0 0 34px 0;
+    }
+  }
+}
+
+#myselect-button {
+  padding: 16px 0 0 19px;
+}
+
+.ui-selectmenu-button .ui-icon::before {
+  content: '\f0dd';
+  font-size: 24px;
+  color: #333333b3;
+}
+
+.ui-selectmenu-button .ui-icon {
+  right: 21px;
+  margin-top: -8px;
+}
+
+select, .ui-selectmenu-button,
+select:focus, .ui-selectmenu-button:focus {
+  border: none;
+}
+
+/* ------------------------------------
+           Experience section
+------------------------------------- */
+
+.experience-tahiti-section {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: #000000b3;
+}
+
+.experience-tahiti-bg {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+  padding: 64px 0 80px 0;
+
+  @media screen and (max-width: 640px) {
+    padding: 30px 0;
+  }
+}
+
+.experience-section__title {
+  color: $main-color;
+  padding: 0 0 240px 0;
+  letter-spacing: 1px;
+
+  @media screen and (max-width: 640px) {
+    padding: 0 0 50px 0;
+  }
+
+  h3 {
+    margin: 0;
+    letter-spacing: 0;
+
+    strong {
+      font-family: $font-bold;
+    }
+    font-family: $font-light;
+    color: $sub-color-red;
+  }
+
+  @media screen and (max-width: 640px) {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 14px;
+    letter-spacing: -0.15px;
+  }
+}
+
+.experience-section__content {
+  text-align: center;
+  margin: auto;
+  max-width: 971px;
+
+  p {
+    font-size: 20px;
+    color: $main-color;
+    font-family: $sub-font-italic;
+    font-style: italic;
+    padding: 0 0 35px 0;
+    letter-spacing: -1.6px;
+  }
+
+  a {
+    font-size: 20px;
+    font-family: $sub-font;
+    text-transform: uppercase;
+    padding: 19px 74px;
+    box-shadow: 0 4px 10px #0000001a;
+  }
+}
+
+/* ------------------------------------
+           Why tahiti section
+------------------------------------- */
+
+.why-tahiti-section {
+  padding: 63px 0 74px 0;
+
+  @media screen and (max-width: 640px) {
+    padding: 30px 0;
+  }
+
+  &__title {
+    text-align: center;
+    padding: 0 0 38px 0;
+
+    h3 {
+      strong {
+        font-family: $sub-font;
+      }
+      font-family: $font-light;
+      color: $sub-color-orange;
+      letter-spacing: 0.7px;
+    }
+  }
+
+  &__content {
+    text-align: center;
+
+    @media screen and (max-width: 640px) {
+      padding: 0 0 15px 0;
+    }
+
+    p {
+      font-family: $sub-font;
+      font-size: 18px;
+      font-weight: 400;
+      max-width: 354px;
+      line-height: 30px;
+      letter-spacing: -0.1px;
+
+      @media screen and (max-width: 640px) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+/* ------------------------------------
+           Book section
+------------------------------------- */
+
+.book-section {
+  background-size: cover;
+  background-position: 50% 50%;
+  color: $main-color;
+  text-align: center;
+  padding: 135px 0;
+
+  @media screen and (max-width: 968px) {
+    padding: 5% 0;
+  }
+
+  .grid-container {
+    background-color: #00000080;
+    padding: 51px 0 67px 0;
+    max-width: 1170px;
+
+    @media screen and (max-width: 1200px) {
+      max-width: 90%;
+      padding: 51px 15px 69px 15px;
+    }
+
+    @media screen and (max-width: 640px) {
+      padding: 30px 15px;
+    }
+  }
+
+  .grid-x {
+    justify-content: center;
+  }
+
+  &__content {
+    max-width: 967px;
+
+    h3 {
+      font-family: $font-bold;
+      text-transform: none;
+      padding: 3px 0 23px;
+      letter-spacing: -0.5px;
+
+      @media screen and (max-width: 1024px) {
+        padding: 3px 7% 23px;
+      }
+
+      @media screen and (max-width: 640px) {
+        font-size: 28px;
+        padding: 3px 5% 23px;
+      }
+    }
+
+    p {
+      font-family: $sub-font;
+      font-size: 20px;
+      font-weight: 400;
+      padding: 0 0 36px 0;
+
+      @media screen and (max-width: 1024px) {
+        padding: 0 5% 36px;
+      }
+    }
+
+    a {
+      font-family: $sub-font;
+      font-size: 20px;
+      text-transform: uppercase;
+      padding: 19px 80.4px;
+    }
+  }
+}
